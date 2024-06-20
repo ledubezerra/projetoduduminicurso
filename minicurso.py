@@ -5,7 +5,7 @@ import streamlit as st
 def home():
 
     st.title("Projeto Pokemon")
-    st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar algumas informações de extrema relevancia sobre pokemons através de gráficos. Para tanto foi utilizado um banco de dados público dos jogos de pokemons até a 6ª geração. Você pode acessar os gráficos assim como os codigos usados para crialos atravez da barra de navegação ao lado.")
+    st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar algumas informações de extrema relevancia sobre pokemons através de gráficos. Para tanto foi utilizado um banco de dados público dos jogos de pokemon até a 6ª geração. Você pode acessar os gráficos assim como os codigos usados para crialos atravez da barra de navegação ao lado.")
 
 
 def carregar_dados():
