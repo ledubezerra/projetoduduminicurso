@@ -51,7 +51,7 @@ def grafico_barras():
     plt.xlabel("Tipo")
     plt.ylabel("Quantidade de pokemons")
     plt.grid(axis="y")
-
+    plt.xticks(rotations=45)
     type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
     type_counts.plot(kind="bar")
     st.pyplot(fig)
