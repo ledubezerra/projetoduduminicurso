@@ -23,7 +23,7 @@ def grafico_linhas():
 
     data.groupby("Generation")["HP"].mean().plot(marker="o")
 
-    plt.title("Tendencia de hp dos pokemons ao longo das gerações")
+    plt.title("Tendencia do hp dos pokemons ao longo das gerações")
     plt.xlabel("Geração")
     plt.ylabel("Média de hp")
     plt.grid()
@@ -34,7 +34,7 @@ def grafico_linhas():
                 data = carregar_dados()
                 fig = plt.figure(figsize=(10,10))
                 data.groupby("Generation")["HP"].mean().plot(marker="o")
-                plt.title("Tendencia de hp dos pokemons ao longo das gerações")
+                plt.title("Tendencia do hp dos pokemons ao longo das gerações")
                 plt.xlabel("Geração")
                 plt.ylabel("Média de hp")
                 plt.grid()
@@ -75,7 +75,7 @@ def grafico_barras():
 def main():
 
     st.sidebar.title("Navegação")
-    pages={"Pagina inicial": home, "Tendencia de hp dos pokemons ao longo das gerações(Gráfico de linhas)": grafico_linhas, "Distribuição de pokemons por tipo(Gráfico de Barras": grafico_barras }
+    pages={"Pagina inicial": home, "Tendencia do hp dos pokemons ao longo das gerações(Gráfico de linhas)": grafico_linhas, "Distribuição de pokemons por tipo(Gráfico de Barras": grafico_barras }
     selection = st.sidebar.selectbox("ir para", list(pages.keys()))
     pages[selection]()
     st.sidebar.title("sobre")
