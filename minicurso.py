@@ -68,7 +68,7 @@ def grafico_barras():
 
 def main():
 
-    st.sidebar.title("navegação")
+    st.sidebar.title("Navegação")
     pages={"Pagina inicial": home, "linhas": grafico_linhas }
     selection = st.sidebar.selectbox("ir para", list(pages.keys()))
     st.sidebar.title("sobre")
