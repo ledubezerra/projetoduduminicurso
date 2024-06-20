@@ -15,7 +15,7 @@ def carregar_dados():
 
 def grafico_linhas():
 
-    st.title("Grafico de linhas")
+    st.title("Gráfico de linhas")
 
     data = carregar_dados()
 
