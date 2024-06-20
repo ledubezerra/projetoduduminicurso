@@ -70,7 +70,7 @@ def grafico_barras():
                 plt.ylabel("Quantidade de pokemons")
                 plt.grid(axis="y")
                 plt.xticks(rotation=45)
-                st.pyplot(fig)
+        
 
 def main():
 
