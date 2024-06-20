@@ -43,14 +43,13 @@ def grafico_barras():
 
     data=carregar_dados()
 
-    st.title("grafico de barras")
+    st.title("Gráfico de barras")
 
     fig=plt.figure(figsize=(10,8))
 
-    plt.title("destribuição de pokemons por tipo")
+    plt.title("Distribuição de pokemons por tipo")
     plt.xlabel("Tipo")
-    plt.ylabel("quantidade de pokemons")
-    plt.xticks(rotations=45)
+    plt.ylabel("Quantidade de pokemons")
     plt.grid(axis="y")
 
     type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
