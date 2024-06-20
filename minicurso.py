@@ -5,6 +5,7 @@ import streamlit as st
 def home():
 
     st.title("projeto pokemon")
+    st.write("aaaaaaaaaaaaaaaaaaa")
 
 def carregar_dados():
 
