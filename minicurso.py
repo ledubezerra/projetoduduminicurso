@@ -69,7 +69,7 @@ def grafico_barras():
 def main():
 
     st.sidebar.title("Navegação")
-    pages={"Pagina inicial": home, "linhas": grafico_linhas }
+    pages={"Pagina inicial": home, "Linhas": grafico_linhas, "Barras": grafico_barras }
     selection = st.sidebar.selectbox("ir para", list(pages.keys()))
     st.sidebar.title("sobre")
     st.sidebar.write("projeto tem como ojeto de estudo os monstrinho de bolso ta ligado")
