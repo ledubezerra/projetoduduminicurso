@@ -58,14 +58,15 @@ def grafico_barras():
 
     with st.expander("codigo para gerar o grafico"):
         with st.echo():
-            data=carregar_dados()
-            st.title("grafico de barras")
-            fig=plt.figure(figsize=(10,8))
-            plt.title("destribuição de pokemons por tipo")
-            plt.xlabel("Tipo")
-            plt.ylabel("quantidade de pokemons")
-            plt.xticks(rotations=45)
-            plt.grid(axis="y")
+                data=carregar_dados()
+                fig=plt.figure(figsize=(10,8))
+                type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
+                type_counts.plot(kind="bar")
+                plt.title("destribuição de pokemons por tipo")
+                plt.xlabel("Tipo")
+                plt.ylabel("quantidade de pokemons")
+                plt.xticks(rotations=45)
+                plt.grid(axis="y")
 
 def main():
 
