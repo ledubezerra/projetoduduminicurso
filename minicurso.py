@@ -20,7 +20,7 @@ def grafico_linhas():
 
     fig = plt.figure(figsize=(10,10))
 
-    data.groupby("generation")["hp"].mean().plot(marker="o")
+    data.groupby("Generation")["HP"].mean().plot(marker="o")
 
     plt.title("tendencia de hp dos pokemons ao longo das gerações")
     plt.xlabel("geração")
