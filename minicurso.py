@@ -5,7 +5,8 @@ import streamlit as st
 def home():
 
     st.title("projeto pokemon")
-    st.write("aaaaaaaaaaaaaaaaaaa")
+    st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar alguns gráficos bobinhos sobre pokemons.")
+    st.whrite("aaaaaaaaaaaaa")
 
 def carregar_dados():
 
@@ -41,33 +42,35 @@ def grafico_linhas():
 
 def grafico_barras():
 
-    data=carregar_dados()
-
     st.title("Gráfico de barras")
+    
+    data=carregar_dados()
 
     fig=plt.figure(figsize=(10,8))
 
-    plt.title("Distribuição de pokemons por tipo")
     type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
     type_counts.plot(kind="bar")
+    
+    plt.title("Distribuição de pokemons por tipo")
     plt.xlabel("Tipo")
     plt.ylabel("Quantidade de pokemons")
     plt.grid(axis="y")
     plt.xticks(rotation=45)
-    
     st.pyplot(fig)
 
     with st.expander("codigo para gerar o grafico"):
         with st.echo():
+                st.title("Gráfico de barras")
                 data=carregar_dados()
                 fig=plt.figure(figsize=(10,8))
                 type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
                 type_counts.plot(kind="bar")
-                plt.title("destribuição de pokemons por tipo")
+                plt.title("Distribuição de pokemons por tipo")
                 plt.xlabel("Tipo")
-                plt.ylabel("quantidade de pokemons")
-                plt.xticks(rotation=45)
+                plt.ylabel("Quantidade de pokemons")
                 plt.grid(axis="y")
+                plt.xticks(rotation=45)
+                st.pyplot(fig)
 
 def main():
 
