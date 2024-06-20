@@ -73,7 +73,7 @@ def grafico_barras():
 
 def main():
 
-    st.sidebar.title("Navegação")
+    st.sidebar.title("Barra de navegação")
     pages={"Pagina inicial": home, "Tendencia do hp dos pokemons ao longo das gerações(Gráfico de linhas)": grafico_linhas, "Distribuição de pokemons por tipo(Gráfico de Barras": grafico_barras }
     selection = st.sidebar.selectbox("ir para", list(pages.keys()))
     pages[selection]()
