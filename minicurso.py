@@ -14,7 +14,7 @@ def carregar_dados():
 
 def grafico_linhas():
 
-    st.sidebar.title("Grafico de linhas")
+    st.title("Grafico de linhas")
 
     data = carregar_dados()
 
