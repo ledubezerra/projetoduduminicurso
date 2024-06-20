@@ -6,7 +6,7 @@ def home():
 
     st.title("projeto pokemon")
     st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar alguns gráficos bobinhos sobre pokemons.")
-    st.whrite("aaaaaaaaaaaaa")
+
 
 def carregar_dados():
 
