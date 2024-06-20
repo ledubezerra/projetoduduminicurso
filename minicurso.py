@@ -37,7 +37,6 @@ def grafico_linhas():
             plt.xlabel("geração")
             plt.ylabel("média de hp")
             plt.grid()
-            st.pyplot(fig)
 
 def grafico_barras():
 
