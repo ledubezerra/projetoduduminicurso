@@ -30,7 +30,6 @@ def grafico_linhas():
 
 with st.expander("codigo para gerar o grafico"):
     with st.echo():
-        st.title("Grafico de linhas")
         data = carregar_dados()
         fig = plt.figure(figsize=(10,10))
         data.groupby("generation")["hp"].mean().plot(marker="o")
