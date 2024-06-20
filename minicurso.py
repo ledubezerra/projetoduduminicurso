@@ -28,15 +28,17 @@ def grafico_linhas():
     plt.grid()
     st.pyplot(fig)
 
-    with st.expander("codigo para gerar o grafico"):
-        with st.echo():
-            data = carregar_dados()
-            fig = plt.figure(figsize=(10,10))
-            data.groupby("generation")["hp"].mean().plot(marker="o")
-            plt.title("tendencia de hp dos pokemons ao longo das gerações")
-            plt.xlabel("geração")
-            plt.ylabel("média de hp")
-            plt.grid()
+with st.expander("codigo para gerar o grafico"):
+    with st.echo():
+        st.title("Grafico de linhas")
+        data = carregar_dados()
+        fig = plt.figure(figsize=(10,10))
+        data.groupby("generation")["hp"].mean().plot(marker="o")
+        plt.title("tendencia de hp dos pokemons ao longo das gerações")
+        plt.xlabel("geração")
+        plt.ylabel("média de hp")
+        plt.grid()
+        st.pyplot(fig)  
 
 def grafico_barras():
 
