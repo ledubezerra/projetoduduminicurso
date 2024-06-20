@@ -4,7 +4,7 @@ import streamlit as st
 
 def home():
 
-    st.title("projeto pokemon")
+    st.title("Projeto Pokemon")
     st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar algumas informações de extrema relevancia sobre pokemons através de gráficos. Você pode acessar esses gráficos atravez da barra de navegação ao lado.")
 
 
