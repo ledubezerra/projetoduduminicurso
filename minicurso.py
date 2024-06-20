@@ -53,7 +53,7 @@ def grafico_barras():
     plt.xticks(rotations=45)
     plt.grid(axis="y")
 
-    typo_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
+    type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
     type_counts.plot(kind="bar")
     st.pyplot(fig)
 
