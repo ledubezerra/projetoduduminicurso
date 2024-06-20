@@ -79,7 +79,7 @@ def main():
     selection = st.sidebar.selectbox("ir para", list(pages.keys()))
     pages[selection]()
     st.sidebar.title("sobre")
-    st.sidebar.write("projeto tem como ojeto de estudo os monstrinho de bolso ta ligado")
+    st.sidebar.write("O projeto tem como objeto de estudo os adoráveis monstrinhos de bolso da franquia Pokémon, criada originalmente em 1996 pelo desenvolvedor japonês Satoshi Tajiri e sua equipe na Game Freak. Explorando a fascinante ecologia e diversidade dessas criaturas digitais, a pesquisa mergulha nas intricadas relações entre treinadores e Pokémon, revelando insights profundos sobre a cultura pop e a nostalgia dos fãs. Com uma abordagem meticulosa, o estudo desvenda os segredos por trás dos lendários, os mistérios dos tipos elementais e a influência dos jogos e desenhos animados no imaginário coletivo. Assim, oferece uma perspectiva única sobre como esses seres virtuais transcendem as fronteiras do entretenimento para se tornarem ícones da imaginação global.Espero que tenha capturado o espírito do Lerolero Generator!")
     
 
 
