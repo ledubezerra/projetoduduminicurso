@@ -5,7 +5,7 @@ import streamlit as st
 def home():
 
     st.title("Projeto Pokemon")
-    st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar algumas informações de extrema relevancia sobre pokemons através de gráficos. Você pode acessar esses gráficos atravez da barra de navegação ao lado.")
+    st.write("Este é um projeto meu, dudu do bigode, que tem como objetivo mostrar algumas informações de extrema relevancia sobre pokemons através de gráficos. Você pode acessar esses gráficos assim como o codigo usado para crialos atravez da barra de navegação ao lado.")
 
 
 def carregar_dados():
@@ -29,7 +29,7 @@ def grafico_linhas():
     plt.grid()
     st.pyplot(fig)
 
-    with st.expander("codigo para gerar o grafico"):
+    with st.expander("codigo para gerar o gráfico de linhas"):
         with st.echo():
                 data = carregar_dados()
                 fig = plt.figure(figsize=(10,10))
@@ -58,7 +58,7 @@ def grafico_barras():
     plt.xticks(rotation=45)
     st.pyplot(fig)
 
-    with st.expander("codigo para gerar o grafico"):
+    with st.expander("codigo para gerar o gráfico de barras"):
         with st.echo():
                 st.title("Gráfico de barras")
                 data=carregar_dados()
