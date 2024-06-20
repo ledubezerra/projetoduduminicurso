@@ -60,7 +60,6 @@ def grafico_barras():
 
     with st.expander("codigo para gerar o gráfico de barras"):
         with st.echo():
-                st.title("Gráfico de barras")
                 data=carregar_dados()
                 fig=plt.figure(figsize=(10,8))
                 type_counts = pd.concat([data["Type1"],data["Type2"]]).value_counts()
